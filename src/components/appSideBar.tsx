@@ -10,7 +10,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
-import { Book, Sparkles, Zap, Layout, ChevronRight } from "lucide-react";
+import { Book, Sparkles, Layout, ChevronRight } from "lucide-react";
 import { ContentName, Routes, SubContentName } from "@/constants";
 import {
   Collapsible,
@@ -38,14 +38,29 @@ const navItems = [
     ],
   },
   {
-    name: ContentName.PerformanceImprovements,
-    icon: <Zap className="h-4 w-4" />,
-    link: Routes.PerformanceImprovements,
+    name: ContentName.Next15,
+    icon: (
+      <div className="w-5 h-5">
+        <Image
+          src="/nextIcon.svg"
+          alt="Next.js logo"
+          width={20}
+          height={20}
+          className=" mt-0.5 text-white group-hover:text-black transition-colors duration-200"
+        />
+      </div>
+    ),
+    subItems: [
+      {
+        name: ContentName.PerformanceImprovements,
+        link: Routes.PerformanceImprovements,
+      },
+    ],
   },
   {
-    name: ContentName.ServerComponents,
+    name: ContentName.ReactCompiler,
     icon: <Layout className="h-4 w-4" />,
-    link: Routes.ServerComponents,
+    link: Routes.ReactCompiler,
   },
 ];
 
@@ -68,9 +83,12 @@ export function AppSidebar() {
                       <CollapsibleTrigger asChild>
                         <SidebarMenuButton asChild>
                           <div className="flex items-center justify-between cursor-pointer">
-                            <div className="flex items-center">
+                            <div className="flex items-center group">
                               {item.icon}
-                              <span className="ml-4">{item.name}</span>
+                              {/* Hide text when collapsed */}
+                              <span className="ml-2 hidden group-data-[state=expanded]:block">
+                                {item.name}
+                              </span>
                             </div>
                             <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]:rotate-90" />
                           </div>

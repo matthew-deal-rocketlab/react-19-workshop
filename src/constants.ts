@@ -4,14 +4,15 @@ export const Routes = {
   UseOptimistic: "/use-optimistic",
   Actions: "/use-action-state",
   PerformanceImprovements: "/performanceimprovements",
-  ServerComponents: "/servercomponents",
+  ReactCompiler: "/react-compiler",
 } as const;
 
 export const ContentName = {
   Home: "Home",
   Actions: "Actions & Hooks",
   PerformanceImprovements: "Performance Improvements",
-  ServerComponents: "Server Components",
+  ReactCompiler: "React Compiler",
+  Next15: "Next 15",
 };
 
 export const SubContentName = {

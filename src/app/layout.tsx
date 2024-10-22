@@ -26,9 +26,9 @@ export default function RootLayout({
           <AppSidebar />
 
           <main className="flex-1 overflow-auto">
-            <header className="flex fled-row gap-2 h-14 items-center border-b bg-muted/40 px-6">
+            <header className="flex fled-row gap-2 h-14 items-center border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/70 px-6 sticky top-0">
               <SidebarTrigger />
-              <h1 className="ml-2 text-lg font-semibold lg:ml-0">
+              <h1 className="ml-2 text-lg font-semibold lg:ml-0 ">
                 React 19 Updates and Features
               </h1>
             </header>

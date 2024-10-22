@@ -1,4 +1,3 @@
-// server/actions.ts
 "use server";
 
 export async function updateName(
