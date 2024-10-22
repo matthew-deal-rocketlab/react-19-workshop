@@ -35,7 +35,7 @@ export default function Page() {
           <h2>Caching</h2>
           <p>
             In Next 14 and earlier, Next would cache fecth requests, Route
-            handlers and client Router PropTypes.resetWarningCache by defualt.
+            handlers.
           </p>
 
           <p>
@@ -45,11 +45,11 @@ export default function Page() {
           <p>
             Previously Next would use <code>force-cache</code> to fetch a
             resource from the cache (if it exists) or a remote server and update
-            the cache cache
+            the cache.
           </p>
           <p>
             Next 15 will now use <code>no-store</code> to fetch a resource from
-            a remote server on every request and not update the
+            a remote server on every request and not update the cache.
           </p>
 
           <p>
@@ -61,16 +61,6 @@ export default function Page() {
             <li>
               Setting the cache option to <code>force-cache</code> in a single
               fetch call
-            </li>
-            <li>
-              Setting the dynamic route config option to{" "}
-              <code>'force-static'</code> for a single route
-            </li>
-            <li>
-              Setting the fetchCache route config option to{" "}
-              <code>'default-cache' </code>to override all fetch requests in a
-              Layout or Page to use force-cache unless they explicitly specify
-              their own cache option
             </li>
           </ul>
         </Prose>

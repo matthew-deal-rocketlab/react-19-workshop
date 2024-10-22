@@ -5,18 +5,22 @@ export const Routes = {
   Actions: "/use-action-state",
   PerformanceImprovements: "/performance-improvements",
   ReactCompiler: "/react-compiler",
+  ServerActions: "/server-actions",
+  PartialPrerendering: "/partial-prerendering",
 } as const;
 
 export const ContentName = {
   Home: "Home",
   Actions: "Actions & Hooks",
-  PerformanceImprovements: "Performance Improvements",
   ReactCompiler: "React Compiler",
   Next15: "Next 15",
-};
+} as const;
 
 export const SubContentName = {
   UseActionState: "UseActionState & useFormStatus",
   OldFormHandling: "Old Form Handling",
   UseOptimistic: "Use Optimistic",
-};
+  ServerActions: "Server Actions Secruity Update",
+  PartialPrerendering: "Partial Prerendering",
+  PerformanceImprovements: "Performance Improvements",
+} as const;

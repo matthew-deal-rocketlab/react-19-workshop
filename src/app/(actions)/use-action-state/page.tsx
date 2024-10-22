@@ -22,7 +22,7 @@ export default function Page() {
   }
 
   return (
-    <Container>
+    <Container className="max-w-2xl">
       <div>
         <h1 className="text-4xl font-bold mb-2">Handling Forms</h1>
         <p className="text-center text-sm">The new way</p>

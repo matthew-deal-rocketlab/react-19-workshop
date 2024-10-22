@@ -57,8 +57,16 @@ const navItems = [
     ),
     subItems: [
       {
-        name: ContentName.PerformanceImprovements,
+        name: SubContentName.PerformanceImprovements,
         link: Routes.PerformanceImprovements,
+      },
+      {
+        name: SubContentName.ServerActions,
+        link: Routes.ServerActions,
+      },
+      {
+        name: SubContentName.PartialPrerendering,
+        link: Routes.PartialPrerendering,
       },
     ],
   },
