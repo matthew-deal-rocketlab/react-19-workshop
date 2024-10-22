@@ -38,6 +38,11 @@ const navItems = [
     ],
   },
   {
+    name: ContentName.ReactCompiler,
+    icon: <Layout className="h-4 w-4" />,
+    link: Routes.ReactCompiler,
+  },
+  {
     name: ContentName.Next15,
     icon: (
       <div className="w-5 h-5">
@@ -56,11 +61,6 @@ const navItems = [
         link: Routes.PerformanceImprovements,
       },
     ],
-  },
-  {
-    name: ContentName.ReactCompiler,
-    icon: <Layout className="h-4 w-4" />,
-    link: Routes.ReactCompiler,
   },
 ];
 

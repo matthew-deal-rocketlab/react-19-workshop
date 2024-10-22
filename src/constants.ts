@@ -3,7 +3,7 @@ export const Routes = {
   OldFormHandling: "/old-form-handling",
   UseOptimistic: "/use-optimistic",
   Actions: "/use-action-state",
-  PerformanceImprovements: "/performanceimprovements",
+  PerformanceImprovements: "/performance-improvements",
   ReactCompiler: "/react-compiler",
 } as const;
 
