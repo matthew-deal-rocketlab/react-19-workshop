@@ -10,7 +10,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
-import { Book, Sparkles, Layout, ChevronRight } from "lucide-react";
+import { Book, Sparkles, Layout, ChevronRight, ScrollText } from "lucide-react";
 import { ContentName, Routes, SubContentName } from "@/constants";
 import {
   Collapsible,
@@ -69,6 +69,11 @@ const navItems = [
         link: Routes.PartialPrerendering,
       },
     ],
+  },
+  {
+    name: ContentName.Othes,
+    icon: <ScrollText className="h-4 w-4" />,
+    link: Routes.Othes,
   },
 ];
 

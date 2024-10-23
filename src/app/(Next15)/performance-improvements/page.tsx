@@ -65,6 +65,22 @@ export default function Page() {
           </ul>
         </Prose>
       </Container>
+      <Container>
+        <Prose>
+          <h2>Server Components HMR ( Hot Module Replacement )</h2>
+          <p>
+            During development, Server components are re-executed when saved.
+            This means, any fetch requests to your API endpoints or third-party
+            services are also called.
+          </p>
+
+          <p>
+            To improve local development performance and reduce potential costs
+            for billed API calls, we now ensure Hot Module Replacement (HMR) can
+            re-use fetch responses from previous renders.
+          </p>
+        </Prose>
+      </Container>
     </>
   );
 }
