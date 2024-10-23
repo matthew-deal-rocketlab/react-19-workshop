@@ -10,7 +10,7 @@ export default function Container({
   return (
     <div
       className={cn(
-        "font-sans bg-react-gray flex flex-col items-center justify-items-center p-8 gap-16 sm:p-10 rounded-3xl m-20",
+        "font-sans max-w-4xl bg-react-gray flex flex-col items-center justify-items-center p-8 gap-16 sm:p-10 rounded-3xl m-20",
         className
       )}
     >

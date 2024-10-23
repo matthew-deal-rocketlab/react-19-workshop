@@ -8,7 +8,7 @@ export default function Card({ name }: { name: string }) {
     return (
       <div className="flex flex-col ap-2 justify-center items-center mt-10 min-h-[200px] p-4">
         <Spinner />
-        <p>{data ? `Requesting ${data?.get("name")}` : ""}</p>
+        <p className="mt-5">{data ? `Requesting ${data?.get("name")}` : ""}</p>
         Form Method: {method}
       </div>
     );

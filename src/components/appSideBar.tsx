@@ -10,7 +10,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
-import { Book, Sparkles, Layout, ChevronRight } from "lucide-react";
+import { Book, Sparkles, Layout, ChevronRight, ScrollText } from "lucide-react";
 import { ContentName, Routes, SubContentName } from "@/constants";
 import {
   Collapsible,
@@ -38,6 +38,11 @@ const navItems = [
     ],
   },
   {
+    name: ContentName.ReactCompiler,
+    icon: <Layout className="h-4 w-4" />,
+    link: Routes.ReactCompiler,
+  },
+  {
     name: ContentName.Next15,
     icon: (
       <div className="w-5 h-5">
@@ -46,21 +51,29 @@ const navItems = [
           alt="Next.js logo"
           width={20}
           height={20}
-          className=" mt-0.5 text-white group-hover:text-black transition-colors duration-200"
+          className="mt-0.5 text-white group-hover:text-black transition-colors duration-200"
         />
       </div>
     ),
     subItems: [
       {
-        name: ContentName.PerformanceImprovements,
+        name: SubContentName.PerformanceImprovements,
         link: Routes.PerformanceImprovements,
+      },
+      {
+        name: SubContentName.ServerActions,
+        link: Routes.ServerActions,
+      },
+      {
+        name: SubContentName.PartialPrerendering,
+        link: Routes.PartialPrerendering,
       },
     ],
   },
   {
-    name: ContentName.ReactCompiler,
-    icon: <Layout className="h-4 w-4" />,
-    link: Routes.ReactCompiler,
+    name: ContentName.Othes,
+    icon: <ScrollText className="h-4 w-4" />,
+    link: Routes.Othes,
   },
 ];
 
