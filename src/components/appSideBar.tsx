@@ -51,7 +51,7 @@ const navItems = [
           alt="Next.js logo"
           width={20}
           height={20}
-          className=" mt-0.5 text-white group-hover:text-black transition-colors duration-200"
+          className="mt-0.5 text-white group-hover:text-black transition-colors duration-200"
         />
       </div>
     ),

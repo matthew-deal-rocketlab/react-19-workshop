@@ -158,7 +158,7 @@ export default function Page() {
 
       <Accordion
         type="multiple"
-        className="w-full bg-blue-500/60 text-white rounded-lg overflow-hidden"
+        className=" bg-blue-500/60 text-white rounded-2xl overflow-hidden"
       >
         <AccordionItem
           value="item-1"
