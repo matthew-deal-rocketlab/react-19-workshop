@@ -68,7 +68,7 @@ export default function Page() {
           <CodeBlock language="tsx">
             {`import React, { useMemo, useCallback } from 'react';
 
-function ExpensiveComponent({ data, onItemClick }) {
+export default function ExpensiveComponent({ data, onItemClick }) {
   // Manually memoizing the expensive calculation
   const processedData = useMemo(() => {
     return data.map(item => ({ ...item, processed: true }));
@@ -88,10 +88,7 @@ function ExpensiveComponent({ data, onItemClick }) {
       ))}
     </ul>
   );
-}
-
-// Wrapping the entire component in memo for shallow prop comparison
-export default React.memo(ExpensiveComponent);`}
+}`}
           </CodeBlock>
 
           <h3 className="text-xl mt-6 mb-2">With React 19 Compiler</h3>
@@ -102,7 +99,7 @@ export default React.memo(ExpensiveComponent);`}
           <CodeBlock language="tsx">
             {`import React from 'react';
 
-function ExpensiveComponent({ data, onItemClick }) {
+export default ExpensiveComponent({ data, onItemClick }) {
   // The compiler automatically memoizes this calculation
   const processedData = data.map(item => ({ ...item, processed: true }));
 
@@ -115,10 +112,7 @@ function ExpensiveComponent({ data, onItemClick }) {
       ))}
     </ul>
   );
-}
-
-// No need for manual memo() wrapping
-export default ExpensiveComponent;`}
+}`}
           </CodeBlock>
 
           <p className="mt-4">
@@ -165,6 +159,7 @@ export default ExpensiveComponent;`}
               </li>
               <li>
                 Reduced risk of performance issues due to forgotten memoization
+                or misused hooks
               </li>
             </ul>
           </div>
