@@ -1,9 +1,7 @@
 "use client";
 
 import Container from "@/components/container";
-import DynamicComponent from "@/components/DynamicComponent";
 import Prose from "@/components/prose";
-import { Suspense } from "react";
 
 export default function Page() {
   return (
@@ -41,9 +39,6 @@ export default function Page() {
           </ul>
         </Prose>
       </Container>
-      <Suspense fallback={<div className="text-white">Loading...</div>}>
-        <DynamicComponent />
-      </Suspense>
     </>
   );
 }
